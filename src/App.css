@@ -5,8 +5,6 @@
 }
 .container{
     background:linear-gradient( 45deg, pink, skyblue) ;
-    width: 100vw;
-    min-height:100vh ;
 }
 /* Navbar */
 .nav{
@@ -92,4 +90,15 @@
     border:1px solid skyblue;
     background: linear-gradient(to left, pink, skyblue, pink);
     color: blue;
+}
+/* Project */
+
+.project{
+    border: 1px solid white;
+    padding: 20px;
+    margin: 5px 10px;
+    height: 50vh;
+}
+.project h1{
+    text-align: center;
 }
