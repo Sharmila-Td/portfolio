@@ -1,8 +1,10 @@
 
 import './App.css';
+import Contact from './Components/Contact';
 import Main from './Components/Main';
 import Navbar from './Components/Navbar';
 import Project from './Components/Project';
+import Skill from './Components/Skill';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
           <Navbar/>
           <Main/>
           <Project/>
+          <Skill/>
+          <Contact/>
     </div>
   );
 }
