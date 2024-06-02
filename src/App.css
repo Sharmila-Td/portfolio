@@ -8,12 +8,16 @@
     width: 100vw;
     min-height:100vh ;
 }
+/* Navbar */
 .nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 60px;
+    height: 100px;
     padding: 15px 10px;
+    border-bottom:1px solid rgb(165, 165, 165);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    background-color:rgba(255, 255, 255, 0.2);
 }
 .nav h3{
     font-size: 28px;
@@ -35,4 +39,57 @@
     margin: 10px 20px;
     padding: 0 20px;
     background-color:aquamarine ;
+}
+/* Main */
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    margin: 20px 30px;
+}
+.main .about-part{
+    width: 700px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 10px rgba(255, 255, 255, 0.2);
+}
+.main .img-part{
+    border: 1px solid white;
+}
+.main h1{
+    font-size: 50px;
+}
+.main .para-one{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0;
+}
+.main .para-two{
+    font-size: 28px;
+    text-align: justify;
+    text-indent: 100px;
+    padding: 5px;
+
+}
+.btn{
+    margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: linear-gradient(to left, skyblue, pink, skyblue);
+    color: blue;
+    font-size: 20px;
+    border: 1px solid blue;
+    outline: none;
+}
+.btn button:hover{
+    border:1px solid skyblue;
+    background: linear-gradient(to left, pink, skyblue, pink);
+    color: blue;
 }

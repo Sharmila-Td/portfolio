@@ -4,6 +4,7 @@ import { FaSun } from 'react-icons/fa'
 
 const Navbar = () => {
   return (
+    <>
     <div className='nav'>
         <h3><i>Sha</i></h3>
         <ul className='nav-list'>
@@ -13,15 +14,15 @@ const Navbar = () => {
             <li>Contact</li>
             <li>Blog</li>
         </ul>
-
         <ul className='icons'>
             <li> <BsInstagram/> </li>
             <li> <BsLinkedin/> </li>
             <li> <BsFacebook/> </li>
         </ul>
-
             <div classname='toggle'> <FaSun/> </div>
+            
     </div>
+    </>
   )
 }
 
