@@ -1,19 +1,13 @@
-
 import './App.css';
-import Contact from './Components/Contact';
-import Main from './Components/Main';
 import Navbar from './Components/Navbar';
-import Project from './Components/Project';
-import Skill from './Components/Skill';
+import Main from './Components/Main';
+
 
 function App() {
   return (
     <div className="container">
           <Navbar/>
           <Main/>
-          <Project/>
-          <Skill/>
-          <Contact/>
     </div>
   );
 }

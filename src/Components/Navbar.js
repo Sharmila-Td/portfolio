@@ -1,29 +1,23 @@
-import React from 'react'
-import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
-import { FaSun } from 'react-icons/fa'
+import React from "react";
 
 const Navbar = () => {
   return (
     <>
-    <div className='nav'>
-        <h3><i>Sha</i></h3>
-        <ul className='nav-list'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Project</li>
-            <li>Contact</li>
-            <li>Blog</li>
+      <div className="nav">
+        <h3>
+          <i>Sha</i>
+        </h3>
+        <ul className="nav-list">
+          <li>Home</li>
+          <li>About</li>
+          <li>Project</li>
+          <li>Contact</li>
+          <li>Blog</li>
         </ul>
-        <ul className='icons'>
-            <li> <BsInstagram/> </li>
-            <li> <BsLinkedin/> </li>
-            <li> <BsFacebook/> </li>
-        </ul>
-            <div classname='toggle'> <FaSun/> </div>
-            
-    </div>
+        <div className="nav-hire">Hire Me </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
