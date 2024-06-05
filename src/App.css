@@ -19,6 +19,12 @@ body{
     gap: 40px;
     font-size: 20px;
     list-style-type: none;
+    cursor: pointer;
+}
+.nav-list li .nav-item{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
 }
 .nav-hire{
     border: 1px solid #008080;
@@ -30,6 +36,22 @@ body{
 }
 .nav-close{
     display: none;
+}
+.nav-item::before{
+    content: '';
+    width: 2rem;
+    height: 0.2rem;
+    background:linear-gradient(to right, #008080, #b5e0e0, #008080);
+    position:absolute;
+    bottom:-0.6rem ;
+    opacity: 0;
+    transform: translateX((-1.5rem));
+    transition: all 0.5s ease;
+}
+.nav-item:hover::before{
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* main */
@@ -83,6 +105,9 @@ body{
     font-weight: bolder;
     background:transparent;
 }
+.main .btn .btn-resume:hover{
+    border: 1px solid white;
+}
 /* Responsive */
 @media(max-width:768px){
     .nav{
@@ -109,7 +134,7 @@ body{
         align-items: start;
         top: 0;
         gap: 40px;
-        background-color: #008080;
+        background-color: rgba(0, 0, 0, 0.5);
         width: 280px;
         height: 100%;
         z-index: 2;
@@ -127,15 +152,16 @@ body{
         margin-bottom: 10px;
     }
     .main h1{
-        width: 80%;
-        font-size: 28px;
+        width: 90%;
+        font-size: 20px;
+        letter-spacing: 2px;
     }
     .main p{
         width: 70%;
-        text-align: justify;
+        text-align: center;
         font-size: 18px;
         margin-top: 0px;
-        letter-spacing: 1px;
+        line-height: 20px;
     }
     .main .btn{
     gap: 20px;
