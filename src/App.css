@@ -25,6 +25,12 @@ body{
     padding: 15px 35px;
     border-radius: 50px;
 }
+.nav-open{
+    display: none;
+}
+.nav-close{
+    display: none;
+}
 
 /* main */
 .main{
@@ -61,6 +67,7 @@ body{
     padding: 15px 45px;
     border-radius: 50px;
     font-size: 14px;
+    font-weight: bolder;
     background:transparent;
     color: white;
 }
@@ -68,10 +75,70 @@ body{
     border: 1px double white;
 }
 .main .btn .btn-resume{
-    border: 1px solid white;
+    border:  1px solid #008080;
+    color: white;
     padding: 15px 35px;
     border-radius: 50px;
     font-size: 14px;
     font-weight: bolder;
     background:transparent;
+}
+/* Responsive */
+@media(max-width:768px){
+    .nav{
+        margin: 30px 50px;
+    }
+    .nav-hire{
+        display: none;
+    }
+    .nav-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+    .nav-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 230px;
+        width: 30px;
+    }
+    .nav-list{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 40px;
+        background-color: #008080;
+        width: 280px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        left: -350px;
+    } 
+    .nav-list li{
+        font-size: 20px;
+        font-weight: 300;
+        padding-left:100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .main img{
+        margin-bottom: 10px;
+    }
+    .main h1{
+        width: 80%;
+        font-size: 28px;
+    }
+    .main p{
+        width: 70%;
+        text-align: justify;
+        font-size: 18px;
+        margin-top: 0px;
+        letter-spacing: 1px;
+    }
+    .main .btn{
+    gap: 20px;
+    font-size: 18px;
+    }
 }
