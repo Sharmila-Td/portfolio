@@ -21,9 +21,9 @@ const Navbar = () => {
           <p className="nav-close" onClick={closeMenu}> <FiX/> </p>
           <li> <a href="#" className="nav-item">Home</a> </li>
           <li> <a href="#" className="nav-item">About</a> </li>
+          <li> <a href="#" className="nav-item">Skill</a> </li>
           <li> <a href="#" className="nav-item">Project</a> </li>
           <li> <a href="#" className="nav-item">Contact</a> </li>
-          <li> <a href="#" className="nav-item">Blog</a> </li>
         </ul>
         <div className="nav-hire">Hire Me </div>
       </div>

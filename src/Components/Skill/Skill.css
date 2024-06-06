@@ -22,6 +22,9 @@
    margin-bottom: 10px;
    width: 60%;
 }
+.skill-box .part-one, .part-two{
+  padding: 1px;
+}
 .skill-box .frontend, .backend, .database, .other{
   border: 1px solid #008080;
   background-color: rgba(127, 214, 214, 0.2);
