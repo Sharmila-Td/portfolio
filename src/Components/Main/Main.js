@@ -1,5 +1,6 @@
 import React from "react";
-import profile from '../image/profile.webp'
+import profile from '../../image/profile.webp'
+import './Main.css'
 
 const Main = () => {
   return (

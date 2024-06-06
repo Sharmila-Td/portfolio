@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { FiAlignJustify } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
+import './Navbar.css'
 
 const Navbar = () => {
   const menubar = useRef();

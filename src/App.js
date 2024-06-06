@@ -1,14 +1,17 @@
-import './App.css';
-import Navbar from './Components/Navbar';
-import Main from './Components/Main';
-
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Main from "./Components/Main/Main";
+import Skill from "./Components/Skill/Skill";
 
 function App() {
   return (
-    <div className="container">
-          <Navbar/>
-          <Main/>
-    </div>
+    <>
+      <Navbar />
+      <div className="container">
+        <Main />
+        <Skill/>
+      </div>
+    </>
   );
 }
 
