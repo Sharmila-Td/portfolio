@@ -1,0 +1,78 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    color:#fff;
+}
+.home-content{
+    width: 550px ;
+    line-height: 42px;
+    padding: 20px;
+    font-weight: lighter;
+}
+.home-content h3{
+    font-size: 48px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.home-content h2{
+    letter-spacing: 3px;
+    color:steelblue ;
+}
+.home-content p{
+    line-height: 18px;
+}
+.home-info{
+    margin: 10px 0;
+}
+.home-info a{
+    color: #fff;
+    word-spacing: 50px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.home img{
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(116, 206, 218, 0.6),
+                -5px -5px 10px rgba(116, 206, 218, 0.6);
+}
+.home img:hover{
+    box-shadow: 5px 5px 10px rgba(79, 192, 207, 0.6),
+    -5px -5px 10px rgba(79, 192, 207, 0.6),
+    10px 10px 15px rgba(178, 83, 190, 0.6),
+    -10px -10px 15px rgba(178, 83, 190, 0.6),
+    15px 15px 20px rgba(19, 175, 84, 0.6),
+    -15px -15px 20px rgba(19, 175, 84, 0.6);
+}
+
+
+/* Responsive */
+ @media(max-width:768px){
+    .home-content{
+        flex-direction: row;
+    }
+    .home img{
+        margin-bottom: 10px;
+    }
+    .home h1{
+        width: 90%;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .home p{
+        width: 70%;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 0px;
+        line-height: 20px;
+    }
+    .home .btn{
+    gap: 20px;
+    font-size: 18px;
+    }
+
+} 

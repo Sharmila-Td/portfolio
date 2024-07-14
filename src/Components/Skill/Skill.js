@@ -1,52 +1,48 @@
 import React from "react";
-import './Skill.css'
+import "./Skill.css";
 
 const Skill = () => {
   return (
-    <div className="skill">
+    <div className="skill" id="skill">
       <h3>Skills </h3>
       <p>Here are the skills, I learned</p>
-      <div className="skill-box">
-        <div className="part-one">
-        <div className="frontend">
-          <h4>Frontend</h4>
+      <div className="skill-item">
+        <div className="skill-link">
+          <p>Frontend</p>
           <ul>
             <li>HTML5</li>
             <li>CSS</li>
-            <li>JAVASCRIPT</li>
-            <li>BOOTSTRAP</li>
+            <li>JavaScript</li>
+            <li>React</li>
           </ul>
         </div>
-        <div className="backend">
-          <h4>Backend</h4>
+        <div className="skill-link">
+          <p>Backend</p>
           <ul>
-            <li>NODE.JS</li>
-            <li>EXPRESS.JS</li>
-            <li>RESTFUL API</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
           </ul>
         </div>
-        </div>
-        <div className="part-two">
-        <div className="database">
-          <h4>Database</h4>
+        <div className="skill-link">
+          <p>Database</p>
           <ul>
-            <li>MONGODB</li>
-            <li>MYSQL</li>
-            <li>MONGOOSE</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
           </ul>
         </div>
-        <div className="other">
-          <h4>Other tools</h4>
+        <div className="skill-link">
+          <p>Others</p>
           <ul>
-            <li>NPM</li>
-            <li>POSTMAN</li>
-            <li>VERCEL</li>
-            <li>RENDER</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
           </ul>
         </div>
-</div>
-        
-        
       </div>
     </div>
   );

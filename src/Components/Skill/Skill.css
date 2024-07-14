@@ -1,61 +1,34 @@
 .skill{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 50px;
+  margin: 20px 150px;
+  background-color: aqua;
 }
 .skill h3{
   text-align: center;
-  font-size: 30px;
-  letter-spacing: 3px;
+  margin-bottom: 20px;
 }
 .skill p{
-  font-size: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
-.skill-box{
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center; 
-   padding: 10px;
-   margin-bottom: 10px;
-   width: 60%;
+.skill-item{
+  display:flex;
+  gap: 20px;
+  
 }
-.skill-box .part-one, .part-two{
-  padding: 1px;
+.skill-item .skill-link{
+  border: 2px solid steelblue;
+  background-color:rgba(70,130,180,0.3) ;
+  border-radius: 5px;
+  padding: 10px;
 }
-.skill-box .frontend, .backend, .database, .other{
-  border: 1px solid #008080;
-  background-color: rgba(127, 214, 214, 0.2);
-  border: 1px solid #008080;
-  border-radius: 10px;
-  width: 350px;
-  height: 150px;
-  padding:20px;
-  margin:0 10px 20px 0 ;
-  display: flex;
-  flex-direction: column;
-}
-.skill-box .frontend h4, .backend h4, .database h4, .other h4{
+.skill-link p{
   text-align: center;
-  margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 1.1rem;
 }
-.skill-box .frontend ul, .backend ul, .database ul, .other ul{
-  list-style-type: none;
+.skill-link ul{
   display: flex;
-  justify-content: space-evenly;
-  gap: 5px;
-
 }
-.skill-box .frontend li, .backend li, .database li, .other li{
-  padding: 5px;
-  border: 1px solid #51bebe;
-  border-radius: 50px;
-}
-@media(max-width:768px){
-    .skill-box{
-      flex-direction: column;
-    }
+.skill-link ul li{
+   border: 1px solid #221c1c00; 
+   
 }
