@@ -6,27 +6,28 @@ import './Contact.css'
 const Contact = () => {
   const [username, setUsername] = useState('')
   return (
-    <div className='contact' id='contact'>
+    <div className='contact container' id='contact'>
     <h3>Get in touch</h3>
     <div className="contact-content">
-          <div className="social-icons">
+          <div className="contact-dial">
+            <div className="contact-group">
               <a href="sharmi.webdev@gmail.com">
                   <BsEnvelope/>
+              
+              <p>sharmi.webdev@gmail.com</p>
               </a>
-              <a href="+91 8807689230">
+            </div>
+
+            <div className="contact-group">
+            <a href="+91 8807689230">
                   <BiMobile/>
+                  <p>+91 8807689230</p>
               </a>
-              <a href="#">
-                  <BsLinkedin/>
-              </a>
-              <a href="#">
-                  <BsGithub/>
-              </a>
-              <a href="#">
-                 <BsInstagram/>
-              </a>
-          </div>
-          <div className="contact-form">
+          
+            </div>  
+        </div>
+   
+    <div className="contact-form">
           <form>
                 <div className='form-group'>
                     <input type='text' name='username' placeholder='UserName' value={username}
@@ -36,16 +37,18 @@ const Contact = () => {
                     <input type='email' name='email' placeholder='Email'/>
                 </div> 
                 <div className='form-group'>
-                    <textarea> Message...</textarea>
+                    <input type='text' name='message' placeholder='Subject'/>
+                </div> 
+                <div className='form-group'>
+                    <input type="textarea" className='textarea' placeholder='message..'/>
                 </div> 
                 <div className="btn">
                 <a href="#">Send</a>
-            </div>
+                </div>
             </form> 
-          </div>
     </div>
     </div>
-   
+    </div>
   )
 }
 

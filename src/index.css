@@ -1,0 +1,82 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Variable */
+:root{
+  --first-color:#007bff;
+  --title-color:#8bc34a;
+  --text-color:#fff;
+  --body-color:#000;
+  --container-color:#181616;
+  --btn-color:#ff9800;
+
+  --body-font: "Rubik", sans-serif;
+  --h1-font:2.25rem;
+  --h2-font:1.5rem;
+  --h3-font:1.25rem;
+  --normal-font:1rem;
+  --small-font:0.875rem;
+  --smaller-font:0.813rem;
+
+  --font-medium:500;
+  --font-semibold:600;
+  --font-bold:700;
+
+  --border-radius:20px
+}
+
+/* Base */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body,button, input, textarea{
+    font-family: var(--body-font);
+    font-size: var(--normal-font);
+}
+body{
+    background-color: var(--body-color);
+    line-height: 1.7;
+    color: var(--text-color);
+}
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+
+/* Resuable components */
+.container{
+    max-width: 1080px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.btn a{
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: var(--normal-font);
+    font-weight: var(--font-bold);
+    background-color: #007bff;
+    box-shadow: 2px 2px 5px rgba(255,255,255,0.3);
+}
+.btn a:hover{
+    background-color: #0069d9;
+}

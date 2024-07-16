@@ -1,59 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background-color: #000;
-    color: floralwhite;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: lighter;
-    font-style: normal;
-}
 .main{
-    margin-left: 110px;
+    margin-left: 120px;
 }
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-h1{
-    font-size: 2.25rem;
-}
-h2{
-    font-size:1.5rem;
-}
-h3{
-    font-size:1.25rem;
-    margin-bottom: 30px;
-}
-p{
-    font-size: 1rem;
-}
-.btn{
-    font-size: 24px;
-    margin: 30px 0;
-    font-weight: bolder;
-}
-.btn a{
-    border: 1px solid transparent;
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: white;
-    background-color: transparent;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    box-shadow: 1px 1px 3px rgba(255,255, 255, 0.8),
-                -1px -1px 3px rgba(255,255, 255, 0.8);
-}
-.btn a:hover{
-    background-color:rgba(00, 80, 80, 0.3);
-    color: steelblue;
+
+/* desktop */
+@media screen and (max-width:1024px){
+    .main{
+        margin-left: 0;
+    }
 }

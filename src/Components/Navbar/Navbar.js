@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { FiAlignJustify } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
-import { CiSettings } from "react-icons/ci";
 import './Navbar.css'
+import Setting from "./Setting";
 
 
 const Navbar = () => {
@@ -16,14 +16,15 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className="nav">
+      <div className="nav" ref={menubar}>
+        <div className="nav-res-logo">
         <a href="#home" className="nav-logo">
           Sha
         </a>
-
+     
+        </div>
         <a className='nav-open' onClick={openMenu} > <FiAlignJustify/> </a>
-
-        <ul className="nav-list" ref={menubar}>
+        <ul className="nav-list" >
           <p className="nav-close" onClick={closeMenu}> <FiX/> </p>
 
           <li className="nav-item">
@@ -52,9 +53,7 @@ const Navbar = () => {
 
         </ul>
 
-        <div classNam="setting">
-            <CiSettings/> 
-        </div>
+       <Setting/>
       </div>
      
     </>

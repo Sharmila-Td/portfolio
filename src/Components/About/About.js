@@ -1,11 +1,11 @@
 import React from "react";
-import profile from "../image/profile.webp";
+import profile from "../image/profile2.JPG";
 import { BiUser, BiMobile, BiEnvelope, BiLocationPlus } from "react-icons/bi";
 import "./About.css";
 
 const About = () => {
   return (
-    <div className="about" id="about">
+    <div className="about container" id="about">
         <h3>About Me</h3>
         <div className="about-content">
             <img src={profile} alt="profile" width={300} height={300}/>
@@ -37,7 +37,7 @@ const About = () => {
               </div>
            
             </div>
-        </div>
+        </div> 
     </div>
   )
 };
