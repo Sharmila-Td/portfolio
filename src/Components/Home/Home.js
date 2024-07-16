@@ -1,6 +1,6 @@
 import React from "react";
 import profile from "../image/profile1.jpg";
-import { FiInstagram, FiLinkedin, FiFacebook } from "react-icons/fi";
+import { FiInstagram, FiLinkedin, FiFacebook, FiGithub } from "react-icons/fi";
 import "./Home.css";
 
 const Main = () => {
@@ -32,6 +32,9 @@ const Main = () => {
           </a>
           <a href="#">
             <FiFacebook />
+          </a>
+          <a href="https://github.com/sharmila-developer" target="_blank">
+              <FiGithub/>
           </a>
         </div>
 

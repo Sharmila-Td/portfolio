@@ -5,7 +5,7 @@ import Home from './Components/Home/Home';
 // import About from "./Components/About/About";
 // import Service from './Components/Service/Service';
 // import Skill from "./Components/Skill/Skill";
-// import Contact from './Components/Contact/Contact';
+import Contact from './Components/Contact/Contact';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       {/* <About/> */}
       {/* <Service/> */}
       {/* <Skill/> */}
-      {/* <Contact/> */}
+      <Contact/>
       </div>
       
     </>
